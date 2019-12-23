@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Тестовая страница</title>
+	<title>Дипломная работа</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+	<link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.css">
 </head>
 <body>
-<h1>Роман Ткаченко</h1>
-<h4>Официальный сайт</h4>
+	<header class="header fixed-container">
+		<nav class="header__nav">
+			<ul class="nav-ul header__nav-ul">
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Портфолио</a></li>
+				<li><a href="#">Стоимость</a></li>
+			</ul>
+			<img class="header__burger" alt="бургер" src="img/burger.png">
+		</nav>
+		<div class="header__make-a-call">
+			<div class="header__phone-number">8(555)555-55-55</div>	
+			<div class="header__phone-call">
+				<img class="header__phone-call-img" alt="телефонная трубка" src="img/phone-call.png">
+			</div>
+			<div class="call-request header__call-request" onclick="location.href='#';">Заказать звонок</div>
+		</div>
+	</header>
+	<main>
+		<article class="visit-card fixed-container">
+			<svg class="visit-card__svg-background"   
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			width=2000 height=665
+			viewBox="-50 -50 773 674">
+			<defs>
+			<linearGradient id="PSgrad_0" x1="0%" x2="22.495%" y1="97.437%" y2="0%">
+			<stop offset="0%" stop-color="rgb(255,143,90)" stop-opacity="1" />
+			<stop offset="99%" stop-color="rgb(255,47,150)" stop-opacity="1" />
+			</linearGradient>
+			</defs>
+			<g id="anim">
+			<path fill="url(#PSgrad_0)"
+			d="M395.520,40.407 C502.261,-10.049 602.994,-10.204 687.212,27.671 C771.647,65.238 839.568,140.836 885.703,234.785 C929.973,329.669 929.926,431.584 893.771,514.027 C857.115,597.700 796.105,660.782 712.966,705.804 C668.936,728.473 622.654,744.002 563.818,753.535 C505.757,762.929 435.142,766.325 360.325,761.479 C211.851,752.158 45.449,708.398 10.358,609.690 C-9.529,560.677 2.954,504.492 27.679,447.950 C52.809,391.326 90.181,334.346 129.419,281.835 C169.063,229.242 210.573,181.118 253.309,140.306 C296.450,99.410 340.817,65.827 395.520,40.407 L395.520,40.407 Z"/>
+			</g>
+			</svg>
+				<div class="visit-card__name-occupation">
+					<p class="my-name visit-card__my-name">Роман Ткаченко</p>
+					<h5>Frontend-разработчик и веб-верстальщик</h5>
+					<div class="visit-card__learn-more" onclick="location.href='#';">Узнать больше</div>
+				</div>
+				<div class="visit-card__picture">
+					<img id="dude" alt="фотка" src="img/dude.png">
+				</div>
+				<div class="visit-card__picture_320">
+					<img id="dude320" alt="фотка" src="img/dude320.png">
+				</div>
+				<p class="visit-card__symbol_1">{ }</p>
+				<p class="visit-card__symbol_2">&lt;div&gt;</p>
+				<p class="visit-card__symbol_3">#</p>
+				<p class="visit-card__symbol_4">&lt;div&gt;</p>
+				<p class="visit-card__symbol_5">&lt;/&gt;</p>
+				<p class="visit-card__symbol_6">&lt;/&gt;</p>
+		</article>
+		<div class="name-occupation-320 fixed-container">
+			<p class="my-name name-occupation-320__my-name">Роман Ткаченко</p>
+			<h5>Frontend-разработчик и веб-верстальщик</h5>
+			<div class="name-occupation-320__learn-more_320" onclick="location.href='#';">Узнать больше</div>
+		</div>
+		<div class="stuff">
+			<div class="arrow"><img id="arrow-left" alt="стрелочка" src="img/arrow.png"></div>
+		</div>
+		<article class="price">
+			<div class="price__text fixed-container">
+				<h2>Адаптивная вёрстка под все устройства и&nbsp;браузеры&nbsp;от 1000 рублей всего за 4 часа.*</h2>
+				<h3 class="price__notice-laptop">* Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально в&nbsp;зависимости&nbsp;от&nbsp;сложности&nbsp;задач.</h3>
+				<h3 class="price__notice-mob">* Срок и стоимость могут отличаться от&nbsp;заявленных&nbsp;и&nbsp;расчитываются индивидуально&nbsp;в&nbsp;зависимости от&nbsp;сложности&nbsp;задач.</h3>
+			</div>
+		</article>
+	</main>
+	<footer class="footer">
+		<div class="footer__white-bar fixed-container">
+			<nav class="footer-nav">
+				<ul class="nav-ul footer__nav-ul">
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">Стоимость</a></li>
+				</ul>
+			</nav>
+			<address class="address footer__address">
+				<ul class="footer__phone-mail fa">
+					<li><i class="fa fa-phone-square-alt"></i>&nbsp;&nbsp;8 (555) 555-55-55</li>
+					<li><i class="fa fa-envelope"></i>&nbsp;&nbsp;tka4enko.roman@gmail.com</li>
+				</ul>
+			</address>
+			<div class="footer__contacts">
+				<div class="call-request footer__call-request" onclick="location.href='#';">Заказать звонок</div>
+				<ul class="social-ul footer__social-ul">
+  					<li><div id="vk" onclick="window.open('https://vk.com/rombl4')"></div></li>
+  					<li><div id="fb" onclick="window.open('https://www.facebook.com/profile.php?id=100001900541578&ref=bookmarks')"></div></li>
+  					<li><div id="tw" onclick="window.open('https://twitter.com/RomanTka4enko')"></div></li>
+  					<li><div id="insta" onclick="window.open('https://www.instagram.com/rombl.4/?hl=ru')"></div></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__copyrights">&copy;&nbsp;Роман Ткаченко, 2019</div>
+	</footer>
 </body>
 </html>
