@@ -150,16 +150,23 @@ html, body {
 h2 {
 	font-size: 45px;
 	color: white;
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
 h3 {
 	color: white;
 	font-size: 18px;
-	line-height: 2;
+	line-height: 1.7;
 	font-weight: 200;
 	text-indent: -13px;
 	padding-left: 13px;
+}
+
+h4 {
+	font-size: 54px;
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 90px;
 }
 
 h5 {
@@ -180,13 +187,22 @@ h5 {
 	display: flex;
 	justify-content: space-between;
 	vertical-align: middle;
+	margin-top: 15px;
+}
+
+.header__burger {
+	display: none;
+}
+
+.header__burger span:nth-child(2) {
+	margin: 6px 0;
 }
 
 .header__phone-number {
-	width: 200px;
+	width: 210px;
 	height: 26px;
 	font-size: 25px;
-	padding-top: 10px;
+	padding-top: 5px;
 	font-weight: 600;
 }
 
@@ -209,7 +225,7 @@ h5 {
 	padding: 0;
 	margin-top: 5px;
 	font-size: 16px;
-	width: 300px;
+	width: 280px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -234,6 +250,17 @@ h5 {
 	display: none;
 }
 
+.header__burger span {
+	display: block;
+	height: 6px;
+	width: 45px;
+	background-color: #fc557c;;
+}
+
+.header-burger span:nth-child(2) {
+	margin: 5px 0;
+}
+
 .call-request {
 	height: 45px;
 	width: 208px;
@@ -256,6 +283,7 @@ h5 {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 10px;
 }
 
 .visit-card__name-occupation {
@@ -271,7 +299,8 @@ h5 {
 	position: absolute;
 	font-size: 49px;
 	font-weight: 700;
-	left: -227px;
+	top: -17px;
+	left: -208px;
 	transform: rotate(25deg);
 	background: linear-gradient(to top, #ff8b5d, #ff2f96);
 	-webkit-background-clip: text;
@@ -281,8 +310,8 @@ h5 {
 
 .visit-card__symbol_2 {
 	position: absolute;
-	left: 431px;
-	top: 62px;
+	left: 450px;
+	top: 30px;
 	font-size: 30px;
 	transform: rotate(-15deg);
 	font-weight: 600;
@@ -294,7 +323,7 @@ h5 {
 
 .visit-card__symbol_3 {
 	position: absolute;
-	left: -113px;
+	left: -90px;
 	top: 200px;
 	font-size: 57px;
 	transform: rotate(15deg);
@@ -307,8 +336,8 @@ h5 {
 
 .visit-card__symbol_4 {
 	position: absolute;
-	left: 600px;
-	bottom: 200px;
+	left: 620px;
+	bottom: 145px;
 	font-size: 38px;
 	transform: rotate(20deg);
 	font-weight: 600;
@@ -321,7 +350,7 @@ h5 {
 .visit-card__symbol_5 {
 	position: absolute;
 	left: 40px;
-	bottom: 15px;
+	bottom: 11px;
 	font-size: 41px;
 	transform: rotate(-20deg);
 	font-weight: 600;
@@ -333,10 +362,10 @@ h5 {
 
 .visit-card__symbol_6 {
 	position: absolute;
-	left: 400px;
-	top: 70px;
+	left: 425px;
+	top: 85px;
 	font-size: 44px;
-	transform: rotate(20deg);
+	transform: rotate(13deg);
 	font-weight: 600;
 	background: linear-gradient(to top, #ff8b5d, #ff2f96);
 	-webkit-background-clip: text;
@@ -365,15 +394,15 @@ h5 {
 }
 
 .visit-card__learn-more {
-	height: 69px;
-	width: 320px;
+	height: 60px;
+	width: 270px;
 	background-color: #ff4e2e;
 	color: white;
 	text-align: center;
-	padding-top: 22px;
+	padding-top: 19px;
 	font-size: 19px;
 	cursor: pointer;
-	margin-top: 60px;
+	margin-top: 47px;
 }
 
 .name-occupation-320__learn-more_320 {
@@ -390,14 +419,20 @@ h5 {
 #dude, #dude320 {
 	position: absolute;
 	bottom: 0;
+	height: 95%;
 }
 
 .visit-card__picture {
-	width: 370px;
+	width: 350px;
 }
 
 .visit-card__name-occupation .my-name {
-	margin-top: 170px;
+	margin-top: 185px;
+	margin-bottom: 0;
+}
+
+.visit-card__name-occupation h5 {
+	margin-top: 10px;
 }
 
 .visit-card__picture_320 {
@@ -410,46 +445,179 @@ h5 {
 }
 
 .price {
-	background: linear-gradient(to top, #ff8b5d, #ff2f96);
+	background: linear-gradient(to top right, #ff8b5d, #ff2f96);
+	position: relative;
+}
+
+.price__symbol_1 {
+	position: absolute;
+	left: 175px;
+	top: 10px;
+	font-size: 50px;
+	transform: rotate(24deg);
+	font-weight: 600;
+	color: white;
+}
+
+.price__symbol_2 {
+	position: absolute;
+	left: 300px;
+	bottom: 7px;
+	font-size: 50px;
+	transform: rotate(17deg);
+	font-weight: 600;
+	color: white;
+}
+
+.price__symbol_3 {
+	position: absolute;
+	right: 260px;
+	top: 35px;
+	font-size: 40px;
+	transform: rotate(-20deg);
+	font-weight: 600;
+	color: white;
+}
+
+.price__symbol_4 {
+	position: absolute;
+	right: 160px;
+	bottom: 0px;
+	font-size: 50px;
+	transform: rotate(-15deg);
+	font-weight: 600;
+	color: white;
+}
+
+.price__symbol_5 {
+	position: absolute;
+	right: 470px;
+	bottom: -17px;
+	font-size: 35px;
+	transform: rotate(17deg);
+	font-weight: 600;
+	color: white;
 }
 
 .price__text {
-	padding-left: 100px;
-	padding-top: 30px;
-	padding-bottom: 90px;
+	padding-left: 150px;
+	padding-top: 35px;
+	padding-bottom: 65px;
 }
 
-.arrow {
+.price__text h2 {
+	margin-bottom: 25px;
+}
+
+.price__notice-laptop {
+	margin-top: 0px;
+	max-width: 800px;
+}
+
+.what-i-do {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.what-i-do__thing_1,
+.what-i-do__thing_2,
+.what-i-do__thing_3,
+.what-i-do__thing_4 {
+	width: 275px;
+	height: 190px;
+	margin: 0;
+	font-size: 20px;
+	color: #8993ad;
+	text-align: center;
+}
+
+.what-i-do img {
+	margin-bottom: 15px;
+}
+
+.learn-price {
+	height: 63px;
+	width: 270px;
+	background-color: #ff4e2e;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 19px;
+	cursor: pointer;
+	margin: 50px auto 190px auto;
+}
+
+.swiper-container {
+	overflow: hidden;
+	width: 1230px;
+	height: 370px;
+	margin: 100px auto 0 auto;	
+	padding: 0 29px;
+}
+
+.swiper-slide {
+	font-size: 20px;
+	color: #8993ad;
+	text-align: center;
+}
+
+.swiper-slide img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.swiper-button-prev::after {
+	display: none;
+}
+
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-button-prev {
+	background: radial-gradient(51% 51%, #000000, transparent);
 	width: 70px;
 	height: 70px;
-	position: relative;
-	background: radial-gradient(51% 51%, #000000, #ffffff);
+	top: 140px;
+	left: -2px;
+	position: absolute;
 }
 
-#arrow-left {
+.swiper-button-next {
+	background: radial-gradient(51% 51%, #000000, transparent);
+	width: 70px;
+	height: 70px;
+	top: 140px;
+	right: 0;
 	position: absolute;
-	top: 4px;
-	left: 4px;
+}
+
+.order-project {
+	height: 65px;
+	width: 270px;
+	background-color: #ff4e2e;
+	color: white;
+	text-align: center;
+	padding-top: 22px;
+	font-size: 19px;
 	cursor: pointer;
+	margin: 70px auto 100px auto;
 }
 
 .footer__white-bar {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	height: 265px;
+	height: 260px;
+	padding-top: 90px;
 }
 
-.footer-nav, 
+/*.footer-nav, 
 .footer__address, 
 .footer__contacts {
 	margin: auto 0;
-}
-
-.footer__nav-ul {
-	list-style-type: none;
-	line-height: 2;
-}
+}*/
 
 .footer__nav-ul a {
 	text-decoration: none;
@@ -457,22 +625,41 @@ h5 {
 	font-size: 18px;
 }
 
+.footer__address {
+	margin-left: 40px;
+}
+
+.footer__contacts {
+	width: 270px;
+}
+
+.footer__nav-ul {
+	list-style-type: none;
+	line-height: 1.9;
+	margin-top: 0;
+}
+
 .footer__phone-mail li{
 	font-size: 25px;
 	font-weight: 400;
 	font-family: Roboto;
-	padding: 22px 0;
+	line-height: 2.2;
 }
 
 .footer__phone-mail {
 	list-style-type: none;
-	margin: 0;
+	margin: 0 0 0 130px;
 }
 
 i {
 	background: linear-gradient(to top, #ff8b5d, #ff2f96);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.footer__call-request {
+	margin: 0 0 30px 0;
+	width: 248px;
 }
 
 .footer__social-ul {
@@ -523,11 +710,6 @@ i {
 	cursor: pointer;
 }
 
-.footer__call-request {
-	margin-left: 0;
-	width: 248px;
-}
-
 .footer__copyrights {
 	height: 80px;
 	text-align: center;
@@ -545,8 +727,43 @@ i {
 	display: none;
 }
 
+.swiper-pagination-bullet-active {
+	background-color: #ff4e2e;
+}
+
+.swiper-pagination-bullet {
+	padding: 8px;
+}
+
+.swiper-pagination {
+	display: none;
+}
+
+@media (max-width: 1636px) {
+	.price__symbol_2 {
+		display: none;
+	}
+
+	.price__symbol_1 {
+		left: 275px;
+		top: -20px;
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 1411px) {
+	.price__symbol_3 {
+		display: none;
+	}
+}
 
 @media (max-width: 1350px){
+
+	/*.price__symbol_1 {
+		left: 155px;
+		top: -15px;
+		font-size: 35px;
+	}*/
 	
 	.visit-card__picture {
 		width: 441px;
@@ -573,13 +790,70 @@ i {
 		width: 1500px;
 		height: 660px;
 	}
+
+	.swiper-container {
+		width: 945px;
+		padding: 0;
+		height: 520px;
+	}
+
+	.swiper-slide img {
+		margin-bottom: 25px;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: none;
+	}
+
+	.swiper-pagination {
+		display: block;
+	}
+
+	.order-project {
+		margin-top: 100px;
+		width: 320px;
+	}
+
+	.learn-price {
+		max-width: 320px;
+	}
 }
 
+@media (max-width: 1180px){
+	.what-i-do {
+		max-width: 859px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.price__symbol_3 {
+		display: block;
+	}
+}
 
 @media (max-width: 1024px) {
 	
+	.visit-card__svg-background {
+		width: 1400px;
+		height: 660px;
+	}
 	.visit-card__name-occupation .my-name {
 		font-size: 54px;
+		margin-top: 210px;
+	}
+
+	.visit-card__name-occupation h5 {
+		margin-top: 20px;
+	}
+
+	.visit-card__learn-more {
+		width: 320px;
+		height: 65px;
+	}
+
+	.visit-card {
+		height: 660px;
 	}
 
 	.header__nav-ul {
@@ -588,9 +862,6 @@ i {
 
 	.header__burger {
 		display: block;
-		width: 47px;
-		height: 35px;
-		padding-top: 3px;
 	}
 
 	h5 {
@@ -598,17 +869,18 @@ i {
 	}
 
 	.visit-card__symbol_1 {
-		left: 50px;
+		left: 80px;
+		top: 0;
 	}
 
 	.visit-card__symbol_2 {
-		left: 850px;
-		top: 0px;
+		left: 890px;
+		top: 15px;
 	}
 
 	.visit-card__symbol_3 {
-		left: 50px;
-		top: 500px;
+		left: 60px;
+		top: 470px;
 	}
 
 	.visit-card__symbol_4 {
@@ -617,19 +889,127 @@ i {
 	}
 
 	.visit-card__symbol_5 {
-		left: 350px;
-		bottom: 100px;
+		left: 360px;
+		bottom: 90px;
 	}
 
 	.visit-card__symbol_6 {
 	display: block;
+	}
 
+	.what-i-do {
+		max-width: 859px;
+		justify-content: space-around;
+	}
+
+	.what-i-do__thing_1,
+	.what-i-do__thing_2,
+	.what-i-do__thing_3,
+	.what-i-do__thing_4 {
+		height: 230px;
+	}
+
+	.learn-price {
+		margin-top: 13px;
+		height: 70px;
+		padding-top: 23px;
+		width: 320px;
+	}
+
+	.swiper-slide {
+		font-size: 25px;
+	}
+
+	.swiper-slide img {
+		margin-bottom: 15px;
+	}
+
+	.swiper-container {
+		height: 540px;
+	}
+
+	.swiper-pagination-bullet {
+		padding: 9px;
+	}
+
+	.order-project {
+		margin-top: 88px;
+		width: 320px;
+	}
+
+	.price__text {
+		padding-left: 40px;
+		padding-top: 40px;
+	}
+
+	.price__symbol_1 {
+		left: 155px;
+		top: -15px;
+		font-size: 35px;
+	}
+
+	.price__symbol_3 {
+		right: 94px;
+    	top: 247px;
+	}
+
+	.price__symbol_4 {
+		display: none;
+	}
+
+	.footer__white-bar {
+		height: 285px;
+	}
+
+	.price__symbol_5 {
+		right: 447px;
+		bottom: -1px;
+		font-size: 29px;
+	}
+
+	.price__text h2 {
+		font-size: 44px;
+	}
+
+	.footer__phone-mail {
+		list-style-type: none;
+		margin: 0;
+	}
+
+	.footer__address {
+		margin-left: 148px;
+	}
+
+	.footer__contacts {
+		padding-left: 20px;
+	}
+
+	.footer__white-bar {
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 952px) {
+	.swiper-container {
+		width: 400px;
+		height: 470px;
+	}
+
+	.footer__white-bar {
+		height: auto;
+		
 	}
 }
 
 @media (max-width: 890px) {
 	.visit-card__svg-background {
 		left: -474px;
+	}
+}
+
+@media (max-width: 683px) {
+	.footer__address {
+		margin-left: 0;
 	}
 }
 
@@ -662,10 +1042,6 @@ i {
 		font-size: 12px;
 	}
 
-	.arrow {
-		display: none;
-	}
-
 	.name-occupation-320 {
 		display: block;
 		text-align: center;
@@ -681,15 +1057,101 @@ i {
 		margin-top: 15px;
 	}
 
+	.swiper-container {
+		width: 400px;
+		height: 470px;
+	}
+
+	.order-project {
+		margin-top: 50px;
+		width: 280px;
+	}
+
+	h4 {
+		font-size: 30px;
+		padding: 0 20px;
+		margin-top: 41px;
+		margin-bottom: 41px;
+	}
+
+	.footer__contacts {
+		margin-top: 0;
+
+}
+
+@media (max-width: 680px) {
+	.footer__address {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.footer__call-request {
+		display: block;
+		width: 100%;
+		background-color: #ff4e2e;
+		border: none;
+		color: white;
+		font-weight: 300;
+	}
+
+	.footer__call-request {
+		margin-bottom: 50px;
+		margin-top: 0;
+		width: 100%;
+		height: 56px;
+		padding-top: 17px;
+	}
+
+	.footer__address {
+		margin-bottom: 0;
+		height: 72px;
+	}
+
+	.footer__phone-mail {
+		height: 69px;
+	}
+
+	.footer-nav {
+		margin-bottom: 0;
+		height: 94px;
+	}
+
+	.footer__contacts {
+		padding-left: 0;
+	}
+
+	.footer__nav-ul a {
+		font-size: 15px;
+	}
+
+	.footer__phone-mail li {
+		font-size: 19px;
+		color: #8993ad;
+	}
+
+	.footer__contacts {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.what-i-do {
+		justify-content: center;
+	}
 }
 
 @media (max-width: 530px) {
 	
-
+	.header__burger span {
+		height: 2px;
+		width: 23px;
+	}
+	
 	.header__phone-number {
-		width: 170px;
+		width: 176px;
 		height: 26px;
-		font-size: 21px;
+		font-size: 19px;
 		padding-top: 2px;
 		font-weight: 600;
 	}
@@ -708,14 +1170,71 @@ i {
 		display: block;
 	}
 
-	h2 {
+	.name-occupation-320 .my-name {
+		font-size: 30px;
+		margin-bottom: 0;
+		margin-top: 10px;
+	}
+
+	.what-i-do {
+		margin-top: 41px;
+	}
+
+	.what-i-do img {
+		width: 22%;
+	}
+
+	.what-i-do__thing_1,
+	.what-i-do__thing_2,
+	.what-i-do__thing_3,
+	.what-i-do__thing_4 {
+		height: 169px;
+	}
+
+	.swiper-container {
+		margin-top: 67px;
+	}
+
+	.swiper-pagination-bullet {
+    padding: 5px;
+	}
+
+	.swiper-slide {
+		font-size: 17px;
+	}
+
+	.order-project {
+	margin: 40px auto 50px auto;
+	width: 85%;
+	height: 53px;
+	padding-top: 15px;
+	}
+
+	.learn-price {
+	margin: 8px auto 95px auto;
+	height: 52px;
+	padding-top: 13px;
+	width: 85%;
+	}
+
+	.price__symbol_1,
+	.price__symbol_2,
+	.price__symbol_3,
+	.price__symbol_4,
+	.price__symbol_5 {
+		display: none;
+	}
+
+	.price__text h2 {
 		font-size: 26px;
+		line-height: 1.5;
 	}
 
 	h3 {
 		font-size: 13px;
 		padding-left: 9px;
 		text-indent: -9px;
+		line-height: 2.4;
 	}
 
 	.price__text {
@@ -724,20 +1243,52 @@ i {
 
 	.price {
 		padding-top: 20px;
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 
 	.fixed-container {
 		padding: 0 20px;
 	}
 
-	.footer__contacts .call-request {
+	.footer__address {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.footer__call-request {
 		display: block;
-		width: 280px;
+		width: 100%;
 		background-color: #ff4e2e;
 		border: none;
 		color: white;
 		font-weight: 300;
+	}
+
+	.footer__call-request {
+		margin-bottom: 50px;
+		margin-top: 0;
+		width: 100%;
+		height: 56px;
+		padding-top: 17px;
+	}
+
+	.footer__address {
+		margin-bottom: 0;
+		height: 72px;
+	}
+
+	.footer__phone-mail {
+		height: 69px;
+	}
+
+	.footer-nav {
+		margin-bottom: 0;
+		margin-top: 6px;
+		height: 94px;
+	}
+
+	.footer__contacts {
+		padding-left: 0;
 	}
 
 	.footer__nav-ul a {
@@ -750,7 +1301,8 @@ i {
 	}
 
 	.footer__contacts {
-		margin-top: 28px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.visit-card__picture_320 {
@@ -763,38 +1315,54 @@ i {
 
 	.visit-card__svg-background {
 		width: 1000px;
-    	height: 295px;
-		left: -374px;
+    	height: 324px;
+		left: -406px;
 		bottom: 0;
 	}
 
 	.visit-card {
-		height: 388px;
+		height: 379px;
 	}
 
 	.visit-card__symbol_1 {
 		font-size: 25px;
+		left: 48px;
+    	top: -14px;
 	}
 
 	.visit-card__symbol_2 {
 		font-size: 15px;
-		left: 260px;
-		top: 80px;
+		left: 246px;
+    	top: 42px;
 		transform: rotate(25deg);
 	}
 
 	.visit-card__symbol_5 {
 		font-size: 19px;
-		left: 160px;
+		left: 173px;
 		bottom: 350px;
 	}
 
 	.visit-card__symbol_3 {
 		font-size: 29px;
-		top: 130px;
-		left: 30px;
+		top: 84px;
+    	left: 36px;
 	}
 
+	.swiper-container {
+		width: 280px;
+		height: 329px;
+	}
+
+	.footer__contacts {
+		width: 100%;
+		margin-bottom: 0;
+	}
 }
 
-
+@media (max-width: 320px) {
+	
+	.footer-nav {
+	margin-top: 46px;
+	}
+}}
