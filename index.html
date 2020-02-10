@@ -15,6 +15,25 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div class="popup-container">
+		<div class="popup-container__popup popup">
+			<form action="#">
+				<label class="form__input">
+					<span>Укажите Ваше имя:</span>
+					<input type="text" size="24" required="required" name="Имя">
+				</label>
+				<label class="form__input">
+					<span>Укажите Ваш номер телефона:</span>
+					<input type="tel" required="required" size="14" name="Телефон" placeholder="+7 (___) ___-__-__">
+				</label>
+				<label class="form__input form__input_email">
+					<span>Укажите адрес Вашей электронный почты:</span>
+					<input required="required" type="email" size= "30" name="email">
+				</label>
+					<input class="send" type="submit" name="submit" value="Отправить">
+			</form>
+		</div>
+	</div>
 	<header class="header fixed-container">
 		<nav class="header__nav">
 			<ul class="nav-ul header__nav-ul">
@@ -30,12 +49,19 @@
 		</nav>
 		<div class="header__make-a-call">
 			<div class="header__phone-number">+7(555)555-55-55</div>	
-			<div class="header__phone-call">
+			<div class="header__phone-call show-call-request">
 				<img class="header__phone-call-img" alt="телефонная трубка" src="img/phone-call.png">
 			</div>
-			<div class="call-request header__call-request" onclick="location.href='#';">Заказать звонок</div>
+			<button class="call-request header__call-request show-call-request" onclick="location.href='#';">Заказать звонок</button>
 		</div>
 	</header>
+	<nav class="mob-menu">
+		<ul class="mob-list">
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Портфолио</a></li>
+			<li><a href="#">Стоимость</a></li>
+		</ul>
+	</nav>
 	<main>
 		<article class="visit-card fixed-container">
 			<svg class="visit-card__svg-background"   
@@ -57,7 +83,7 @@
 				<div class="visit-card__name-occupation">
 					<p class="my-name visit-card__my-name">Роман Ткаченко</p>
 					<h5>Frontend-разработчик и веб-верстальщик</h5>
-					<div class="visit-card__learn-more" onclick="location.href='#';">Узнать больше</div>
+					<button class="visit-card__learn-more show-call-request-email" onclick="location.href='#';">Узнать больше</button>
 				</div>
 				<div class="visit-card__picture">
 					<img id="dude" alt="фотка" src="img/dude.png">
@@ -75,7 +101,7 @@
 		<div class="name-occupation-320 fixed-container">
 			<p class="my-name name-occupation-320__my-name">Роман Ткаченко</p>
 			<h5>Frontend-разработчик и веб-верстальщик</h5>
-			<div class="name-occupation-320__learn-more_320" onclick="location.href='#';">Узнать больше</div>
+			<button class="name-occupation-320__learn-more_320 show-call-request-email" onclick="location.href='#';">Узнать больше</button>
 		</div>
 		<h4>Что я делаю</h4>
 		<div class="what-i-do fixed-container">
@@ -92,8 +118,10 @@
 				<figcaption>Исправление и доработка существующей вёрстки</figcaption>
 			</figure>
 		</div>
-		<div class="learn-price" onclick="location.href='#';">Узнать стоимость</div>
-		<h4>Примеры моих работ</h4>
+		<div class="learn-price-container">
+			<button class="learn-price show-call-request-email" onclick="location.href='#';">Узнать стоимость</button>
+		</div>
+		<h4 class="ver2">Примеры моих работ</h4>
 		<div class="swiper-container">
 			<div class="swiper-button-prev"><img src="img/arrow-left.png" alt="стрелка влево"></div>
    			<div class="swiper-button-next"><img src="img/arrow-right.png" alt="стрелка вправо"></div>
@@ -104,7 +132,9 @@
 			</div>
 			<div class="swiper-pagination"></div>
 		</div>
-		<div class="order-project" onclick="location.href='#';">Заказать проект</div>
+		<div class="order-project-container">
+			<button class="order-project show-call-request-email" onclick="location.href='#';">Заказать проект</button>
+		</div>
 		<div class="price">
 			<p class="price__symbol_1">{ }</p>
 			<p class="price__symbol_2">#</p>
@@ -129,17 +159,17 @@
 			</nav>
 			<address class="address footer__address">
 				<ul class="footer__phone-mail fa">
-					<li><i class="fa fa-phone-square-alt"></i>&nbsp;&nbsp;+7 (555) 555-55-55</li>
-					<li><i class="fa fa-envelope"></i>&nbsp;&nbsp;tka4enko.roman@gmail.com</li>
+					<li><a href="#"><i class="fa fa-phone-square-alt"></i>&nbsp;&nbsp;+7 (555) 555-55-55</a></li>
+					<li><a href="#"><i class="fa fa-envelope"></i>&nbsp;&nbsp;tka4enko.roman@gmail.com</a></li>
 				</ul>
 			</address>
 			<div class="footer__contacts">
-				<div class="call-request footer__call-request" onclick="location.href='#';">Заказать звонок</div>
+				<button class="call-request footer__call-request show-call-request" onclick="location.href='#';">Заказать звонок</button>
 				<ul class="social-ul footer__social-ul">
-  					<li><div id="vk" onclick="window.open('https://vk.com/rombl4')"></div></li>
-  					<li><div id="fb" onclick="window.open('https://www.facebook.com/profile.php?id=100001900541578&ref=bookmarks')"></div></li>
-  					<li><div id="tw" onclick="window.open('https://twitter.com/RomanTka4enko')"></div></li>
-  					<li><div id="insta" onclick="window.open('https://www.instagram.com/rombl.4/?hl=ru')"></div></li>
+					<li><a href="https://vk.com/rombl4" target="_blank"><div id="vk"></div></a></li>
+  					<li><a href="https://www.facebook.com/profile.php?id=100001900541578&ref=bookmarks" target="_blank"><div id="fb"></div></a></li>
+  					<li><a href="https://twitter.com/RomanTka4enko" target="_blank"><div id="tw"></div></a></li>
+  					<li><a href="https://www.instagram.com/rombl.4/?hl=ru" target="_blank"><div id="insta"></div></a></li>
 				</ul>
 			</div>
 		</div>
@@ -147,32 +177,7 @@
 	</footer>
 	<script src="jquery-3.4.1.min.js"></script>
 	<script src="swiper.min.js"></script>
-	<script>
-		var mySwiper = new Swiper ('.swiper-container', {
-			slidesPerView: 1,
-			loop: true,
-			navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-			},
-			pagination: {
-    		el: '.swiper-pagination',
-    		type: 'bullets',
-			clickable: true,
-  			},
-			breakpoints: {
-				953: {
-					spaceBetween: 35,
-					slidesPerView: 2,
-					loop: true,
-				},
-				1350: {
-					slidesPerView: 3,
-					spaceBetween: 30,
-					loop: true,
-				}
-			}
-		})
-	</script>
+	<script src="jquery.inputmask.min.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
