@@ -3,8 +3,9 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  font-family: Roboto;
+  font-family: Roboto, Arial;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* roboto-100 - latin_cyrillic */
@@ -216,7 +217,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   flex-wrap: wrap;
 }
 
@@ -230,29 +231,30 @@ button {
 }
 
 .popup {
-  width: 365px;
+  width: 410px;
+  height: fit-content;
   background-color: white;
-  padding: 20px;
-  margin: 100px auto 0 auto; 
+  padding: 40px;
+  margin: 10% auto 0 auto;
+  text-align: center;
 }
 
 .popup span {
-	text-align: center;
+  text-align: center;
+  font-size: 22px;
 }
 
 .popup input {
   border-color: #f82370;
   padding: 5px;
   margin-top: 10px;
+  font-size: 25px;
 }
 
 .send {
-  height: 31px;
-  width: 89px;
   border: 2px solid #f82370;
   color: #f82370;
   cursor: pointer;
-  margin-left: 120px;
 }
 
 .my-name {
@@ -314,6 +316,12 @@ h5 {
   font-size: 25px;
   padding-top: 5px;
   font-weight: 600;
+}
+
+.header__phone-number a,
+footer__phone-mail a {
+  text-decoration: none;
+  color: black;
 }
 
 .header__phone-call {
@@ -721,6 +729,10 @@ h5 {
   padding: 0 29px;
 }
 
+.swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px 10px;
+}
+
 .swiper-slide {
   font-size: 20px;
   color: #8993ad;
@@ -902,6 +914,7 @@ i {
 
 .swiper-pagination-bullet {
   padding: 8px;
+  margin: 0 10px;
 }
 
 .swiper-pagination {
@@ -989,6 +1002,7 @@ i {
 }
 
 @media (max-width: 1024px) {
+
   .header__x span {
     height: 6px;
     width: 47px;
@@ -1539,12 +1553,13 @@ i {
 
   @media (max-width: 450px) {
 	.popup {
-		width: 280px;
-	}
-
-	.send {
-		margin-left: 80px;
-	}
+    width: 280px;
+    padding: 20px;
+  }
+  
+  .popup input,
+  .popup span {
+    font-size: 16px;
   }
 
   @media (max-width: 390px) {
@@ -1556,4 +1571,4 @@ i {
       margin-bottom: 0;
     }
   }
-}
+}}
